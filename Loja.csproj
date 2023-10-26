@@ -129,6 +129,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202310231449528_InitialCreate.cs" />
+    <Compile Include="Migrations\202310231449528_InitialCreate.designer.cs">
+      <DependentUpon>202310231449528_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202310251324549_XPTO.cs" />
+    <Compile Include="Migrations\202310251324549_XPTO.designer.cs">
+      <DependentUpon>202310251324549_XPTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\StoreContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -233,6 +242,14 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202310231449528_InitialCreate.resx">
+      <DependentUpon>202310231449528_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202310251324549_XPTO.resx">
+      <DependentUpon>202310251324549_XPTO.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

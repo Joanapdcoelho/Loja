@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -12,6 +13,10 @@ namespace Loja
     {
         protected void Application_Start()
         {
+            //faz logo as alterações da DB antes de começar
+            Database.SetInitializer(
+                new MigrateDatabaseToLatestVersion<Models.StoreContext, Migrations.Configuration>());
+
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

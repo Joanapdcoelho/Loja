@@ -13,7 +13,8 @@ namespace Loja.Models
         public string Description { get; set; }
         public decimal Price { get; set; }
         public DateTime LastBuy { get; set; }
-        public float Stocks { get; set; }
+        public float Stocks { get; set; }        
+        
 
     }
 }
